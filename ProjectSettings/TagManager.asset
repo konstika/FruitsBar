@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Place
+  - Glass
+  - Fruit
+  - Table
   layers:
   - Default
   - TransparentFX

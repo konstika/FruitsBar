@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ItemBoxInteraction : Interaction
 {
-    [SerializeField] private GameObject _item;
+    [SerializeField] private GameObject _itemPrefab;
 
     protected override bool CheckAction()
     {
@@ -11,6 +11,7 @@ public class ItemBoxInteraction : Interaction
 
     protected override void TakeAction()
     {
-        HandStorageController.Instance.TakeItemInHand(_item);
+
+        HandStorageController.Instance.TakeItemInHand(Instantiate(_itemPrefab));
     }
 }
