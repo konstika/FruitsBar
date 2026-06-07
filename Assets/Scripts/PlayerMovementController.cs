@@ -8,14 +8,19 @@ public class PlayerMovementController : MonoBehaviour
     private Transform _currentTarget = null;
     private Quaternion _currentTargetRotation;
 
+    private void Start()
+    {
+        _currentTarget = transform;
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) {
-            _currentTargetRotation.eulerAngles = new Vector3(transform.eulerAngles.x, (transform.eulerAngles.y + 90), transform.eulerAngles.z);
+            _currentTargetRotation.eulerAngles = new Vector3(_currentTargetRotation.eulerAngles.x, (_currentTargetRotation.eulerAngles.y + 90), _currentTargetRotation.eulerAngles.z);
         }
         else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            _currentTargetRotation.eulerAngles = new Vector3(transform.eulerAngles.x, (transform.eulerAngles.y - 90), transform.eulerAngles.z);
+            _currentTargetRotation.eulerAngles = new Vector3(_currentTargetRotation.eulerAngles.x, (_currentTargetRotation.eulerAngles.y - 90), _currentTargetRotation.eulerAngles.z);
         }
         else if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)))
         {
