@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9009984680900072106}
   - component: {fileID: -4160325423503634972}
+  - component: {fileID: 5131111893414106454}
   m_Layer: 0
   m_Name: CollinsGlass
   m_TagString: Glass
@@ -47,6 +48,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Item
   Name: collins glass
+--- !u!114 &5131111893414106454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418375519165542325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04161dee81a61a24b98739222ff5c8df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DrinkController
+  _drinkRender: {fileID: 2284629509789871532}
 --- !u!1 &1445529856448690643
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,6 +186,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5586ddd32f6ca274e837184191c8a475, type: 3}
+--- !u!23 &2284629509789871532 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4050203504435635831, guid: 5586ddd32f6ca274e837184191c8a475, type: 3}
+  m_PrefabInstance: {fileID: 2846720058863635419}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2308989480330505264 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5586ddd32f6ca274e837184191c8a475, type: 3}

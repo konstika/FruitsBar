@@ -78,6 +78,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2535150477360145031}
   - component: {fileID: -7296259795687900938}
+  - component: {fileID: 3763838796637126595}
   m_Layer: 0
   m_Name: MartiniGlass
   m_TagString: Glass
@@ -115,6 +116,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Item
   Name: martini glass
+--- !u!114 &3763838796637126595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6506142659530894278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04161dee81a61a24b98739222ff5c8df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DrinkController
+  _drinkRender: {fileID: 5576684640785206605}
 --- !u!1001 &2884269627877061400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -175,5 +189,10 @@ PrefabInstance:
 --- !u!4 &3426186588012549363 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 53867a27bc0de9348aba1d200a8d36e0, type: 3}
+  m_PrefabInstance: {fileID: 2884269627877061400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &5576684640785206605 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1917787063178068395, guid: 53867a27bc0de9348aba1d200a8d36e0, type: 3}
   m_PrefabInstance: {fileID: 2884269627877061400}
   m_PrefabAsset: {fileID: 0}

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1670852466976095586}
   - component: {fileID: 8536413391536006803}
+  - component: {fileID: 7287573424502303}
   m_Layer: 0
   m_Name: HurricaneGlass
   m_TagString: Glass
@@ -47,6 +48,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Item
   Name: hurricane glass
+--- !u!114 &7287573424502303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194198917609244378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04161dee81a61a24b98739222ff5c8df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DrinkController
+  _drinkRender: {fileID: 3519467931094660828}
 --- !u!1 &8773553991330422006
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,6 +186,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c6a2fed27682344cbc895a17c84381f, type: 3}
+--- !u!23 &3519467931094660828 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -9004863733624976604, guid: 1c6a2fed27682344cbc895a17c84381f, type: 3}
+  m_PrefabInstance: {fileID: 3737958327456038392}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3771021650720954899 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1c6a2fed27682344cbc895a17c84381f, type: 3}

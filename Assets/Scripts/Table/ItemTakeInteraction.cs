@@ -6,7 +6,7 @@ public class IteTakeInteraction : Interaction
     [SerializeField] private string _tooltip = "Take the {0}";
     protected override bool CheckAction()
     {
-        return true;
+        return HandStorageController.Instance.IsEmptyHand();
     }
 
     protected override void ChooseMessage()
