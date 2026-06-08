@@ -22,6 +22,7 @@ public class FruitStateController : MonoBehaviour
         _state = FruitState.SlicesGravity;
         _fullFruit.SetActive(false);
         _slicesFruit.SetActive(true);
+        GetComponent<Item>().Name = GetComponent<Item>().Name + " slices";
     }
 
     public void GravityOff() {

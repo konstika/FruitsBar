@@ -2,16 +2,27 @@ using UnityEngine;
 
 abstract public class Interaction : MonoBehaviour
 {
-    [SerializeField] protected string _tooltipMessage;
+    protected string tooltipMessage;
+    protected string itemName;
 
     abstract protected bool CheckAction();
     abstract protected void TakeAction();
-    private void OnMouseEnter()
-    {
+    abstract protected void ChooseMessage();
+    private void ComposeMessage() {
+        tooltipMessage = string.Format(tooltipMessage, itemName);
+    }
+
+    private void CheckMessage() {
         if (CheckAction())
         {
-            MessageShower.Instance.ShowMessage(_tooltipMessage);
+            ChooseMessage();
+            ComposeMessage();
+            MessageShower.Instance.ShowMessage(tooltipMessage);
         }
+    }
+    private void OnMouseEnter()
+    {
+        CheckMessage();
     }
 
     private void OnMouseExit()
@@ -24,10 +35,7 @@ abstract public class Interaction : MonoBehaviour
         if (CheckAction()) {
             TakeAction();
             MessageShower.Instance.HideMessage();
-            if (CheckAction())
-            {
-                MessageShower.Instance.ShowMessage(_tooltipMessage);
-            }
+            CheckMessage();
         }
     }
 }

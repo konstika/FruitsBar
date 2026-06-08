@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 950470145496578601}
   - component: {fileID: 8277093692168096508}
+  - component: {fileID: 1467222113135046941}
   m_Layer: 0
   m_Name: Lemon
   m_TagString: Fruit
@@ -49,6 +50,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FruitStateController
   _fullFruit: {fileID: 8968725871519127902}
   _slicesFruit: {fileID: 7852831952781213045}
+--- !u!114 &1467222113135046941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3361617265880792168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 214ea0963b7084e4a8d7b9e126a21e52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  Name: lemon
 --- !u!1 &4496069301096544768
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,8 +129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4523ddf0b2aed0e4fa85e08150730293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemPutInteraction
-  _tooltipMessage: Take a lemon
   _item: {fileID: 3361617265880792168}
+  _tooltip: Take the {0}
 --- !u!1001 &6934334925270237220
 PrefabInstance:
   m_ObjectHideFlags: 0

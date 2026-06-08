@@ -1,11 +1,18 @@
 using UnityEngine;
 
-public class ItemPutInteraction : Interaction
+public class IteTakeInteraction : Interaction
 {
     [SerializeField] private GameObject _item;
+    [SerializeField] private string _tooltip = "Take the {0}";
     protected override bool CheckAction()
     {
         return true;
+    }
+
+    protected override void ChooseMessage()
+    {
+        itemName = _item.GetComponent<Item>().Name;
+        tooltipMessage = _tooltip;
     }
 
     protected override void TakeAction()

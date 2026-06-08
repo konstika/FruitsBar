@@ -389,7 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 496ae4f78e67af84d9d59ab66256efc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TableInteraction
-  _tooltipMessage: Put it on the table
+  _tooltip: Put the {0} on the table
 --- !u!1 &71879211
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,8 +456,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555bf57415962b846b71e10d3e49dfcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KnifeInteraction
-  _tooltipMessage: Cut
   _cutboardController: {fileID: 1882529961}
+  _tooltip: Cut {0}
 --- !u!1001 &134978987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -581,8 +581,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b087ca69b722924ca4fb1d01e00773a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemBoxInteraction
-  _tooltipMessage: Take a collins glass
   _itemPrefab: {fileID: 1418375519165542325, guid: 27e5ed97a125d564eaa8e0c0668ba43d, type: 3}
+  _tooltip: Take a {0}
 --- !u!1 &179486304
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,8 +736,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b087ca69b722924ca4fb1d01e00773a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemBoxInteraction
-  _tooltipMessage: Take a martini glass
   _itemPrefab: {fileID: 6506142659530894278, guid: 0e5cd07e920e24945ad5a0e0ac94df09, type: 3}
+  _tooltip: Take a {0}
 --- !u!1 &364015238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,10 +1387,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e40bb41faa1f53c4fa8528490a28b670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CutBoardPutInteraction
-  _tooltipMessage: 
   _cutboardController: {fileID: 1882529961}
-  _putActionName: Put it on the cutting board
-  _takeActionName: Take it
+  _putActionName: Put the {0} on the cutting board
+  _takeActionName: Take the {0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,8 +1675,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b087ca69b722924ca4fb1d01e00773a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemBoxInteraction
-  _tooltipMessage: Take a hurricane glass
   _itemPrefab: {fileID: 1194198917609244378, guid: ef360e2170395484a9bef1101fc40899, type: 3}
+  _tooltip: Take a {0}
 --- !u!1 &1096447979
 GameObject:
   m_ObjectHideFlags: 0
@@ -2090,8 +2089,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b087ca69b722924ca4fb1d01e00773a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemBoxInteraction
-  _tooltipMessage: Take a lemon
   _itemPrefab: {fileID: 3361617265880792168, guid: ac8ca832a98919e43aaf4172d42b59fc, type: 3}
+  _tooltip: Take a {0}
 --- !u!65 &1378486460
 BoxCollider:
   m_ObjectHideFlags: 0
