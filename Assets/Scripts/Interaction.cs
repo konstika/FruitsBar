@@ -2,7 +2,7 @@ using UnityEngine;
 
 abstract public class Interaction : MonoBehaviour
 {
-    [SerializeField] private string _tooltipMessage;
+    [SerializeField] protected string _tooltipMessage;
 
     abstract protected bool CheckAction();
     abstract protected void TakeAction();
@@ -24,6 +24,10 @@ abstract public class Interaction : MonoBehaviour
         if (CheckAction()) {
             TakeAction();
             MessageShower.Instance.HideMessage();
+            if (CheckAction())
+            {
+                MessageShower.Instance.ShowMessage(_tooltipMessage);
+            }
         }
     }
 }
