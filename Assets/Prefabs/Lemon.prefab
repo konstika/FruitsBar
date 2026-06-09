@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 950470145496578601}
   - component: {fileID: 8277093692168096508}
-  - component: {fileID: 1467222113135046941}
   - component: {fileID: 1702955751076901217}
   m_Layer: 0
   m_Name: Lemon
@@ -51,19 +50,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FruitStateController
   _fullFruit: {fileID: 8968725871519127902}
   _slicesFruit: {fileID: 7852831952781213045}
---- !u!114 &1467222113135046941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3361617265880792168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 214ea0963b7084e4a8d7b9e126a21e52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Item
-  Name: lemon
 --- !u!114 &1702955751076901217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,8 +62,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8606e0b3908f55479984f85565fed6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fruit
+  Name: lemon
   _fruitType: 0
-  _name: lemon
   _color: {r: 0.9811321, g: 0.93348914, b: 0.254539, a: 1}
 --- !u!1 &4496069301096544768
 GameObject:

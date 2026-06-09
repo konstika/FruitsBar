@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6780117453432152781}
   - component: {fileID: 6931951109445056581}
   - component: {fileID: 8420216132094096970}
+  - component: {fileID: 3329009691424433072}
   m_Layer: 0
   m_Name: GlassCollider
   m_TagString: Untagged
@@ -68,6 +69,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::IteTakeInteraction
   _item: {fileID: 6506142659530894278}
   _tooltip: Take the {0}
+--- !u!114 &3329009691424433072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332811049159988385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41839b351462ba04bb95f58f30c9f154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddingIngridientInteraction
+  _drinkController: {fileID: 3763838796637126595}
+  _tooltip: Add {0} to the {1}
+--- !u!1 &5149561158832668638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1732993620612525166}
+  m_Layer: 0
+  m_Name: FruitPlace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1732993620612525166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5149561158832668638}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.284, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2535150477360145031}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6506142659530894278
 GameObject:
   m_ObjectHideFlags: 0
@@ -77,7 +123,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2535150477360145031}
-  - component: {fileID: -7296259795687900938}
   - component: {fileID: 3763838796637126595}
   m_Layer: 0
   m_Name: MartiniGlass
@@ -101,21 +146,9 @@ Transform:
   m_Children:
   - {fileID: 3426186588012549363}
   - {fileID: 6780117453432152781}
+  - {fileID: 1732993620612525166}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-7296259795687900938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6506142659530894278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 214ea0963b7084e4a8d7b9e126a21e52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Item
-  Name: martini glass
 --- !u!114 &3763838796637126595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,7 +161,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04161dee81a61a24b98739222ff5c8df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DrinkController
-  _drinkRender: {fileID: 5576684640785206605}
+  Name: martini glass
+  _render: {fileID: 5576684640785206605}
+  _baseFilling: 0.8
+  _fruitPlace: {fileID: 1732993620612525166}
 --- !u!1001 &2884269627877061400
 PrefabInstance:
   m_ObjectHideFlags: 0

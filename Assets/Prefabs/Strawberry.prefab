@@ -365,7 +365,6 @@ GameObject:
   m_Component:
   - component: {fileID: 11578361471142111}
   - component: {fileID: 1542039782771766790}
-  - component: {fileID: 6976642954820823160}
   - component: {fileID: -7383645363975393424}
   m_Layer: 0
   m_Name: Strawberry
@@ -406,19 +405,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FruitStateController
   _fullFruit: {fileID: 2850867472147074769}
   _slicesFruit: {fileID: 1072927810118884589}
---- !u!114 &6976642954820823160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4255504553563093643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 214ea0963b7084e4a8d7b9e126a21e52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Item
-  Name: strawberry
 --- !u!114 &-7383645363975393424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,8 +417,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8606e0b3908f55479984f85565fed6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fruit
+  Name: strawberry
   _fruitType: 1
-  _name: strawberry
   _color: {r: 1, g: 0, b: 0.20881367, a: 1}
 --- !u!1 &5995077860192344029
 GameObject:

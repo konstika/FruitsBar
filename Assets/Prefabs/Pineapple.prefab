@@ -150,7 +150,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4014703412618547601}
   - component: {fileID: 3044527140559795688}
-  - component: {fileID: 5555733432332521460}
   - component: {fileID: -7271351312423854281}
   m_Layer: 0
   m_Name: Pineapple
@@ -191,19 +190,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FruitStateController
   _fullFruit: {fileID: 7484163770098526374}
   _slicesFruit: {fileID: 4298521484008044445}
---- !u!114 &5555733432332521460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2126434450035902266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 214ea0963b7084e4a8d7b9e126a21e52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Item
-  Name: pineapple
 --- !u!114 &-7271351312423854281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,8 +202,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8606e0b3908f55479984f85565fed6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fruit
+  Name: pineapple
   _fruitType: 4
-  _name: pineapple
   _color: {r: 1, g: 0.8518007, b: 0, a: 1}
 --- !u!1 &2694490699390747420
 GameObject:

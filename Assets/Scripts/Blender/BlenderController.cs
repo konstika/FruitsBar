@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class BlenderController : MonoBehaviour
 {
-    private Drink _drink = null;
     private List<GameObject> _fruits = new List<GameObject>();
     [SerializeField] private Transform _fruitPoint;
-    [SerializeField] private Renderer _drinkRender;
+    [SerializeField] private DrinkController _drinkController;
 
     public bool WithDrink() {
-        return _drink is not null;
+        return _drinkController.Drink is not null;
     }
 
     public bool WithFruits() { 
@@ -28,19 +27,18 @@ public class BlenderController : MonoBehaviour
             fruits.Add(fruit.GetComponent<Fruit>());
             Destroy(fruit);
         }
-        _drink = new Drink(fruits, _drinkRender, 0.5f);
+        _drinkController.PourDrink(new Drink(fruits));
         _fruits.Clear();
     }
 
     public Drink GetDrink()
     {
-        return _drink;
+        return _drinkController.Drink;
     }
 
     public Drink PourOutDrink() {
-        Drink drink = _drink;
-        _drink = null;
-        _drinkRender.material.SetFloat("_Filling", 0f);
+        Drink drink = _drinkController.Drink;
+        _drinkController.ClearGlass();
         return drink;
     }
 }

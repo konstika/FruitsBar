@@ -785,7 +785,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1879107343445794248}
   - component: {fileID: 2537594366695059355}
-  - component: {fileID: 4540706380299078160}
   - component: {fileID: 5405386016524344865}
   m_Layer: 0
   m_Name: Tomato
@@ -826,19 +825,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FruitStateController
   _fullFruit: {fileID: 2996453524097521309}
   _slicesFruit: {fileID: 83332702572927794}
---- !u!114 &4540706380299078160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6072663756822086133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 214ea0963b7084e4a8d7b9e126a21e52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Item
-  Name: tomato
 --- !u!114 &5405386016524344865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,6 +837,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8606e0b3908f55479984f85565fed6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fruit
+  Name: tomato
   _fruitType: 3
-  _name: tomato
   _color: {r: 1, g: 0, b: 0, a: 1}

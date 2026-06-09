@@ -645,7 +645,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8472311625392465370}
   - component: {fileID: 2771953482128398122}
-  - component: {fileID: 307493637536373362}
   - component: {fileID: 2390172838519031739}
   m_Layer: 0
   m_Name: Mango
@@ -686,19 +685,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FruitStateController
   _fullFruit: {fileID: 346380033929296595}
   _slicesFruit: {fileID: 347365062792892021}
---- !u!114 &307493637536373362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3516732346794694805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 214ea0963b7084e4a8d7b9e126a21e52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Item
-  Name: mango
 --- !u!114 &2390172838519031739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -711,8 +697,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8606e0b3908f55479984f85565fed6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fruit
+  Name: mango
   _fruitType: 2
-  _name: mango
   _color: {r: 1, g: 0.4441294, b: 0.2028302, a: 1}
 --- !u!1 &3952179059794508561
 GameObject:

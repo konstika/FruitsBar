@@ -3,7 +3,7 @@ using UnityEngine;
 public class BlenderInteraction : Interaction
 {
     [SerializeField] private string _putActionName = "Put the {0} in the blender";
-    [SerializeField] private string _takeActionName = "Pour the {0} drink into a glass";
+    [SerializeField] private string _takeActionName = "Pour the {0} into a glass";
     [SerializeField] private BlenderController _blenderController;
     private Action _action;
     enum Action

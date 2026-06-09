@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Fruit: MonoBehaviour
+public class Fruit: Item
 {
     [SerializeField] private Ingridient _fruitType;
     public Ingridient FruitType
@@ -9,11 +9,6 @@ public class Fruit: MonoBehaviour
         private set => _fruitType = value;
     }
 
-    [SerializeField] private string _name;
-    public string Name { 
-        get => _name;
-        private set => _name = value;
-    }
     [SerializeField] private Color _color;
     public Color Color
     {
