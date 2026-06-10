@@ -45,7 +45,7 @@ public class GuestsQueueController : MonoBehaviour
                 new string[]{ "And here we have another strange cafe!","Look at all this weird things on shelves, that they call 'Fruits'!","I wonder if these are just cheap, nasty substitutes like they feed us in all those other places.","Hey, you here! Make me a drink with that little red whatever-it-is.", "I bet it will be as sour, bittery and burning spicy as everywhere.", ""},
                 new string[]{ "I knew that would happen! And they actually have the nerve to serve this crap to customers.", ""},
                 new string[] { "Wow, now this is a pleasant drink — never had one like it. Not like in those other bars.", "Thanks!",""},
-                new Ingridient[]{ Ingridient.Strawberry, Ingridient.Sugar },
+                new Ingridient[]{ Ingridient.Strawberry},
                 new Ingridient[]{ Ingridient.Water, Ingridient.Ice, Ingridient.Strawberry, Ingridient.Sugar }
             )
         };
