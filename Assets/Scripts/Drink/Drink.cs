@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -44,6 +45,32 @@ public class Drink
         if (idgridientType == Ingridient.Water) {
             Color = new Color(Color.r, Color.g, Color.b, 0.5f);
         }
+    }
+
+    public bool CheckIngridientInDrink(Ingridient ingr) {
+        return (_ingridients.Contains(ingr) || _noDrinkIngridients.Contains(ingr));
+    }
+
+    public bool CheckNeededIngridientsInDrink(Ingridient[] neededIngr)
+    {
+        foreach (var ingr in neededIngr)
+        {
+            if (!CheckIngridientInDrink(ingr)) { return false; }
+        }
+        return true;
+    }
+
+    public bool CheckAcceptIngridientsInDrink(Ingridient[] acceptIngr)
+    {
+        foreach (var ingr in _ingridients)
+        {
+            if (!acceptIngr.Contains(ingr)) { return false; }
+        }
+        foreach (var ingr in _noDrinkIngridients)
+        {
+            if (!acceptIngr.Contains(ingr)) { return false; }
+        }
+        return true;
     }
 }
 
