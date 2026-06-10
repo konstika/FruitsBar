@@ -48,6 +48,7 @@ public class GuestsQueueController : MonoBehaviour
                 new Ingridient[]{ Ingridient.Strawberry},
                 new Ingridient[]{ Ingridient.Water, Ingridient.Ice, Ingridient.Strawberry, Ingridient.Sugar }
             )
+
         };
         _guestController = _guest.GetComponent<GuestController>();
         _guestController.OnGuestEscaped += ToNextGuest;
