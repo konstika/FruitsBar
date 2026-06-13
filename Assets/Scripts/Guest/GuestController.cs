@@ -14,6 +14,7 @@ public class GuestController : MonoBehaviour
     private GameObject _drink;
     [SerializeField] private Transform _drinkPlace;
     [SerializeField] private GuestDialogController _guestDialogController;
+    private AchievementManager _achievementManager = AchievementManager.Instance;
     public StateGuest State { get; private set; }
     public enum StateGuest
     {
@@ -44,9 +45,11 @@ public class GuestController : MonoBehaviour
         if (Guest.CheckDrink(_drink.GetComponent<DrinkController>().Drink))
         {
             _guestDialogController.CreateDialog(Guest.RightOrderDialog);
+            _achievementManager.SetAchievementState(Guest.Achievement, true);
         }
         else {
             _guestDialogController.CreateDialog(Guest.FailOrderDialog);
+            _achievementManager.SetAchievementState(Guest.Achievement, true);
         }
     }
     public void Escape() {

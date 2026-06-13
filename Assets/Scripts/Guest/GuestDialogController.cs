@@ -42,7 +42,6 @@ public class GuestDialogController : MonoBehaviour
         ToNextMessage();
     }
     public void ToNextMessage() {
-        Debug.Log(_currentMessageNumber+" из "+_dialog.Length);
         if (_dialog == null) {return; }
         if (_currentMessageNumber < _dialog.Length)
         {

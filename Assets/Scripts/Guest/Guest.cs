@@ -2,22 +2,21 @@ using UnityEngine;
 
 public class Guest
 {
-    private string[] _orderDialog;
-    public string[] OrderDialog { get => _orderDialog; private set => _orderDialog = value; }
+    public AchievementIndex Achievement { get; private set; }  
+    public string[] OrderDialog { get; private set; }
 
-    private string[] _failOrderDialog;
-    public string[] FailOrderDialog { get => _failOrderDialog; private set => _failOrderDialog = value; }
+    public string[] FailOrderDialog { get; private set; }
 
-    private string[] _rightOrderDialog;
-    public string[] RightOrderDialog { get => _rightOrderDialog; private set => _rightOrderDialog = value; }
+    public string[] RightOrderDialog { get; private set; }
 
     private Ingridient[] _neededIngr;
     private Ingridient[] _acceptIngr;
 
-    public Guest(string[] orderDialog, string[] failOrderDialog,string[] rightOrderDialog, Ingridient[] neededIngr, Ingridient[] acceptIngr) {
-        _orderDialog = orderDialog;
-        _failOrderDialog = failOrderDialog;
-        _rightOrderDialog = rightOrderDialog;
+    public Guest(AchievementIndex achievement, string[] orderDialog, string[] failOrderDialog,string[] rightOrderDialog, Ingridient[] neededIngr, Ingridient[] acceptIngr) {
+        Achievement = achievement;
+        OrderDialog = orderDialog;
+        FailOrderDialog = failOrderDialog;
+        RightOrderDialog = rightOrderDialog;
         _neededIngr = neededIngr;
         _acceptIngr = acceptIngr;
     }
