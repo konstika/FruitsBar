@@ -6,6 +6,8 @@ using UnityEngine;
 public class PoliceController : MonoBehaviour
 {
     [SerializeField] private GuestDialogController _guestDialogController;
+    [SerializeField] private SpriteRenderer _face;
+    [SerializeField] private Sprite _faceSprite;
     private AchievementManager _achievementManager = AchievementManager.Instance;
 
 
@@ -34,6 +36,8 @@ public class PoliceController : MonoBehaviour
 
     }
     public void CreateDialog() {
+        _guestDialogController.OnDialogEnd += PoliceEscape;
+        _face.sprite = _faceSprite;
         List<string> dialogList = new List<string>();
         dialogList.AddRange(_policeDialog);
         dialogList.AddRange(GetAchieveDialog());
@@ -59,5 +63,9 @@ public class PoliceController : MonoBehaviour
             if (_achievementManager.GetAchievementState(index)) { _currentCorrectOrder++; }
         }
         return dialog;
+    }
+
+    public void PoliceEscape() {
+        MessageShower.Instance.ShowEndScreen();
     }
 }

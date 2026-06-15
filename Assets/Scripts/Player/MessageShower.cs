@@ -5,6 +5,7 @@ public class MessageShower : MonoBehaviour
 {
     public static MessageShower Instance;
     [SerializeField] private TextMeshProUGUI _messageTMP;
+    [SerializeField] private GameObject _endScreen;
 
 
     void Awake()
@@ -19,6 +20,7 @@ public class MessageShower : MonoBehaviour
     private void Start()
     {
         _messageTMP.enabled = false;
+        _endScreen.SetActive(false);
     }
 
     public void ShowMessage(string message) { 
@@ -28,5 +30,10 @@ public class MessageShower : MonoBehaviour
 
     public void HideMessage() {
         _messageTMP.enabled = false;
+    }
+
+    public void ShowEndScreen() {
+        _messageTMP.enabled = false;
+        _endScreen.SetActive(true);
     }
 }
