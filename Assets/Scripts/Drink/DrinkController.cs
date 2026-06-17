@@ -6,6 +6,7 @@ public class DrinkController : Item
     [SerializeField] private Renderer _render;
     [SerializeField] private float _baseFilling = 0.8f;
     [SerializeField] private Transform _fruitPlace;
+    [SerializeField] private DrinkAnimationController _animationController;
 
     public Drink Drink
     {
@@ -19,12 +20,29 @@ public class DrinkController : Item
         }
     }
 
-    public void PourDrink(Drink drink, float filling = -1)
+    public bool Pouring { get; private set; }
+
+    private void Start()
+    {
+        if (_animationController != null) { _animationController.OnStopPouring += StopPouring; }
+        Pouring = false;
+    }
+
+    private void StopPouring() {
+        Pouring = false;
+    }
+
+    public void PourDrink(Drink drink, float filling = -1, bool animatePour = true)
     {
         _drink = drink;
         if (filling == -1) { filling = _baseFilling; }
         UpdateMaterialDrink(filling);
         Name = _drink.Name;
+        if (animatePour)
+        {
+            _animationController.AnimatePour();
+            Pouring = true;
+        }
     }
 
     public void ClearGlass()
@@ -45,6 +63,7 @@ public class DrinkController : Item
         AddIngridient(fruit.GetComponent<Fruit>().FruitType, fruit.GetComponent<Fruit>().Name);
         fruit.transform.SetParent(_fruitPlace, true);
         fruit.transform.localPosition = Vector3.zero;
+        fruit.GetComponent<FruitStateController>().GravityOn();
     }
 
     public void AddIngridient(Ingridient ingridient, string name)

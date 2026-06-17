@@ -37,6 +37,20 @@ public class FruitStateController : MonoBehaviour
             }
         }
     }
+
+    public void GravityOn()
+    {
+        if (_state == FruitState.SlicesKinematic)
+        {
+            _state = FruitState.SlicesGravity;
+            Rigidbody[] slicesRigidbody = _slicesFruit.GetComponentsInChildren<Rigidbody>();
+            foreach (Rigidbody sliceRigidbody in slicesRigidbody)
+            {
+                sliceRigidbody.isKinematic = false;
+                sliceRigidbody.useGravity = true;
+            }
+        }
+    }
 }
 
 public enum FruitState

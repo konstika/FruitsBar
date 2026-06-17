@@ -13,12 +13,12 @@ public class BlenderInteraction : Interaction
     }
     protected override bool CheckAction()
     {
-        if ((HandStorageController.Instance.GetItem()?.GetComponent<FruitStateController>()?.GetFruitState() == FruitState.SlicesKinematic) && !_blenderController.WithDrink())
+        if ((HandStorageController.Instance.GetItem()?.GetComponent<FruitStateController>()?.GetFruitState() == FruitState.SlicesKinematic) && !_blenderController.WithDrink() && !_blenderController.Working)
         {
             _action = Action.Put;
             return true;
         }
-        else if ((HandStorageController.Instance.GetItem()?.tag == "Glass") && _blenderController.WithDrink())
+        else if ((HandStorageController.Instance.GetItem()?.tag == "Glass") && _blenderController.WithDrink() && !_blenderController.Working)
         {
             _action = Action.Take;
             return true;

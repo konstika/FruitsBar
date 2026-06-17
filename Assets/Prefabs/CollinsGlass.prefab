@@ -51,6 +51,7 @@ MonoBehaviour:
   _render: {fileID: 2284629509789871532}
   _baseFilling: 0.8
   _fruitPlace: {fileID: 874939889175127308}
+  _animationController: {fileID: 5471273435852578564}
 --- !u!1 &1445529856448690643
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,7 +101,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -159,7 +160,7 @@ Transform:
   m_GameObject: {fileID: 7699105678243058934}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.066, z: 0}
+  m_LocalPosition: {x: 0, y: 0.418, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -220,8 +221,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5586ddd32f6ca274e837184191c8a475, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7180581652272269762}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5586ddd32f6ca274e837184191c8a475, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5471273435852578564}
+    - targetCorrespondingSourceObject: {fileID: -6620080670408684102, guid: 5586ddd32f6ca274e837184191c8a475, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 148581540680462298}
   m_SourcePrefab: {fileID: 100100000, guid: 5586ddd32f6ca274e837184191c8a475, type: 3}
+--- !u!1 &261538064610330209 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6620080670408684102, guid: 5586ddd32f6ca274e837184191c8a475, type: 3}
+  m_PrefabInstance: {fileID: 2846720058863635419}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &148581540680462298
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261538064610330209}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5455740421396307855, guid: 5586ddd32f6ca274e837184191c8a475, type: 3}
 --- !u!23 &2284629509789871532 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 4050203504435635831, guid: 5586ddd32f6ca274e837184191c8a475, type: 3}
@@ -232,3 +269,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5586ddd32f6ca274e837184191c8a475, type: 3}
   m_PrefabInstance: {fileID: 2846720058863635419}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3116769249570780810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5586ddd32f6ca274e837184191c8a475, type: 3}
+  m_PrefabInstance: {fileID: 2846720058863635419}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7180581652272269762
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3116769249570780810}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b9cb357e5e0a46147a7e670376c69253, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5471273435852578564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3116769249570780810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed19418b14c4cd499d96294fe33d275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DrinkAnimationController
+  _blenderAnimator: {fileID: 0}
