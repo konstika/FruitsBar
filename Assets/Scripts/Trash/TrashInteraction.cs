@@ -2,11 +2,13 @@ using UnityEngine;
 
 public class TrashInteraction : Interaction
 {
+    [SerializeField] private TrashController _trashController;
     [SerializeField] private string _tooltip = "Throw away the {0}";
     [SerializeField] private float _maxActionDistance = 1f;
     protected override bool CheckAction()
     {
-        return (!HandStorageController.Instance.IsEmptyHand() && (Vector3.Distance(HandStorageController.Instance.GetItem().transform.position, transform.position) < _maxActionDistance));
+        return (!HandStorageController.Instance.IsEmptyHand() && (Vector3.Distance(HandStorageController.Instance.GetItem().transform.position, transform.position) < _maxActionDistance)
+            && _trashController.IsEmpty);
     }
 
     protected override void ChooseMessage()
@@ -17,7 +19,6 @@ public class TrashInteraction : Interaction
 
     protected override void TakeAction()
     {
-        GameObject item = HandStorageController.Instance.ReleaseItemFromHand();
-        Destroy(item);
+        _trashController.ThrowAway(HandStorageController.Instance.ReleaseItemFromHand());
     }
 }
