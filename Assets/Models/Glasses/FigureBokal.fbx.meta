@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: a45af970c7654ef4a8aa15f0febd22da
+guid: be057684fe112a44c8484c479f27931c
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DrinkMaterial
+    second: {fileID: 2100000, guid: 2fe53272dac59ed409f67ec064858ed7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material1024
+    second: {fileID: 2100000, guid: 1c7f434e4bec45a418691de00f217615, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
