@@ -59,11 +59,18 @@ public class DrinkController : Item
         _render.material.SetFloat("_Filling", filling);
     }
 
-    public void AddIngridient(GameObject fruit) {
+    public void AddIngridient(GameObject fruit, Transform addingPlace = null) {
         AddIngridient(fruit.GetComponent<Fruit>().FruitType, fruit.GetComponent<Fruit>().Name);
-        fruit.transform.SetParent(_fruitPlace, true);
-        fruit.transform.localPosition = Vector3.zero;
-        fruit.GetComponent<FruitStateController>().GravityOn();
+        if (addingPlace == null)
+        {
+            fruit.transform.SetParent(_fruitPlace, true);
+            fruit.transform.localPosition = Vector3.zero;
+        }
+        else {
+            fruit.transform.SetParent(transform, true);
+            fruit.transform.position = addingPlace.position;
+        }
+        fruit.GetComponent<FruitStateController>()?.GravityOn();
     }
 
     public void AddIngridient(Ingridient ingridient, string name)

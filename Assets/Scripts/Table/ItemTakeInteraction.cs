@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class IteTakeInteraction : Interaction
+public class ItemTakeInteraction : Interaction
 {
     [SerializeField] private GameObject _item;
     [SerializeField] private string _tooltip = "Take the {0}";

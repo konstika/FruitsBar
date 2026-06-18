@@ -6,7 +6,7 @@ public class GuestInteraction : Interaction
     [SerializeField] private string _tooltip = "Serve the {0}";
     protected override bool CheckAction()
     {
-        return (HandStorageController.Instance.GetItem()?.GetComponent<DrinkController>().Drink != null && _guestController.State == GuestController.StateGuest.WaitingOrder);
+        return (HandStorageController.Instance.GetItem()?.GetComponent<DrinkController>()?.Drink != null && _guestController.State == GuestController.StateGuest.WaitingOrder);
     }
 
     protected override void ChooseMessage()

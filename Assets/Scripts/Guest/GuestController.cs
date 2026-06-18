@@ -43,6 +43,13 @@ public class GuestController : MonoBehaviour
     public void TakeDrink(GameObject drink) {
         _drink = drink;
         _drink.transform.position = _drinkPlace.position;
+
+        _drink.layer = LayerMask.NameToLayer("Ignore Raycast");
+        foreach (Transform child in _drink.transform)
+        {
+            child.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+        }
+
         State = StateGuest.EndDialog;
         if (Guest.CheckDrink(_drink.GetComponent<DrinkController>().Drink))
         {
