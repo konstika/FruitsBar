@@ -1459,7 +1459,7 @@ Light:
   serializedVersion: 12
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 13.2
+  m_Intensity: 13.75
   m_Range: 7.78
   m_SpotAngle: 179
   m_InnerSpotAngle: 120
@@ -7084,6 +7084,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ae0a9b120e08db240a86e38b0d5c4c99, type: 3}
   m_PrefabInstance: {fileID: 820279142}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &831811579
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1194198917609244378, guid: ef360e2170395484a9bef1101fc40899, type: 3}
+      propertyPath: m_Name
+      value: HurricaneGlass
+      objectReference: {fileID: 0}
+    - target: {fileID: 1670852466976095586, guid: ef360e2170395484a9bef1101fc40899, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.033272266
+      objectReference: {fileID: 0}
+    - target: {fileID: 1670852466976095586, guid: ef360e2170395484a9bef1101fc40899, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0050011
+      objectReference: {fileID: 0}
+    - target: {fileID: 1670852466976095586, guid: ef360e2170395484a9bef1101fc40899, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.7341615
+      objectReference: {fileID: 0}
+    - target: {fileID: 1670852466976095586, guid: ef360e2170395484a9bef1101fc40899, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1670852466976095586, guid: ef360e2170395484a9bef1101fc40899, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1670852466976095586, guid: ef360e2170395484a9bef1101fc40899, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1670852466976095586, guid: ef360e2170395484a9bef1101fc40899, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1670852466976095586, guid: ef360e2170395484a9bef1101fc40899, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1670852466976095586, guid: ef360e2170395484a9bef1101fc40899, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1670852466976095586, guid: ef360e2170395484a9bef1101fc40899, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef360e2170395484a9bef1101fc40899, type: 3}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -18629,3 +18686,4 @@ SceneRoots:
   - {fileID: 1137375758}
   - {fileID: 1560407891}
   - {fileID: 292597601}
+  - {fileID: 831811579}
