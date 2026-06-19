@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DrinkMat
-  m_Shader: {fileID: -6465566751694194690, guid: 909efd92ea645054c98c712ecf286fe1, type: 3}
+  m_Shader: {fileID: 4800000, guid: e04ae69ad80289f41af4ec24c741136d, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -18,8 +18,7 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3001
   stringTagMap: {}
-  disabledShaderPasses:
-  - MOTIONVECTORS
+  disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -42,6 +41,7 @@ Material:
     - _QueueControl: 1
     - _QueueOffset: 4
     m_Colors:
+    - _Color: {r: 0, g: 1, b: 0, a: 1}
     - _ColorSide: {r: 0.2001531, g: 1, b: 0, a: 1}
     - _ColorTop: {r: 0.08267376, g: 0.6603774, b: 0, a: 1}
   m_BuildTextureStacks: []
