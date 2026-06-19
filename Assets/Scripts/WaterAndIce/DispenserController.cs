@@ -3,12 +3,18 @@ using UnityEngine;
 public abstract class DispenserController : MonoBehaviour
 {
     [SerializeField] private Transform _place;
+    protected AudioSource _dispenserAudioSource;
     protected GameObject item;
 
     public enum ModeDispenser
     {
         Water,
         Ice
+    }
+
+    private void Start()
+    {
+        _dispenserAudioSource = GetComponent<AudioSource>();
     }
 
     public void PutItemInPlace(GameObject i) {

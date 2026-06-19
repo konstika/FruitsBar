@@ -12,5 +12,6 @@ public class WaterDispenserController : DispenserController
         else {
             drinkController.AddIngridient(Ingridient.Water, "water");
         }
+        _dispenserAudioSource.Play();
     }
 }

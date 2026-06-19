@@ -4,6 +4,7 @@ using static UnityEditor.Progress;
 public class KnifeInteraction : Interaction
 {
     [SerializeField] private CutboardController _cutboardController;
+    [SerializeField] private AudioSource _cutboardAudioSource;
     [SerializeField] private string _tooltip = "Cut {0}";
 
     protected override bool CheckAction()
@@ -20,5 +21,6 @@ public class KnifeInteraction : Interaction
     protected override void TakeAction()
     {
         _cutboardController.GetFruit().GetComponent<FruitStateController>().Cut();
+        _cutboardAudioSource.Play();
     }
 }

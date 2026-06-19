@@ -6,6 +6,8 @@ public class SpiceInteraction : Interaction
     [SerializeField] private string _nameIngridient;
     [SerializeField] private string _tooltipt = "Add {0} to the {1}";
     [SerializeField] private  float _maxInteractionDistance = 2f;
+
+    [SerializeField] private AudioSource _spiceAudioSource;
     protected override bool CheckAction()
     {
         return HandStorageController.Instance.GetItem()?.GetComponent<DrinkController>()?.Drink != null
@@ -20,5 +22,6 @@ public class SpiceInteraction : Interaction
     protected override void TakeAction()
     {
         HandStorageController.Instance.GetItem().GetComponent<DrinkController>().AddIngridient(_ingridient, _nameIngridient);
+        _spiceAudioSource.Play();
     }
 }

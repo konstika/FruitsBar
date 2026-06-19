@@ -8,5 +8,6 @@ public class IceDispenserController : DispenserController
     public override void AddIngridient()
     {
         item.GetComponent<DrinkController>().AddIngridient(Instantiate(_prefabIce), _icePlace);
+        _dispenserAudioSource.Play();
     }
 }
