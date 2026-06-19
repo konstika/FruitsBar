@@ -1938,9 +1938,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: f9cb2438d4aaa054694b688423ae1d14, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.594
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7412,7 +7412,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 26c2e69358190c641859768d8e28e1db, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -11483,8 +11483,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BlenderAnimationController
   _blenderAnimator: {fileID: 0}
   _audioSource: {fileID: 0}
-  _workBlenderAudio: {fileID: 0}
-  _pouringAudio: {fileID: 0}
+  _workBlenderAudio: {fileID: 8300000, guid: de1bea7692d5c354d977b31ceb8612db, type: 3}
+  _pouringAudio: {fileID: 8300000, guid: d027445a67972c64e88938d8e079727e, type: 3}
 --- !u!82 &1373783061
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11499,7 +11499,7 @@ AudioSource:
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.3
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -12837,7 +12837,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 698c6c866f142f64ab3da6c241d81eaf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -15706,7 +15706,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 5bf94cffaa4b7c2418b50bf1b4e10975, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -17774,10 +17774,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: da95b5b8a4aed954c831f98bfc30af6d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.8
+  m_Pitch: 0.9
   Loop: 0
   Mute: 0
   Spatialize: 0

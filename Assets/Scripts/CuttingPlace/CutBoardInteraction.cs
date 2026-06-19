@@ -18,7 +18,7 @@ public class CutBoardInteraction : Interaction
             _action = Action.Put;
             return true;
         }
-        else if (!_cutboardController.IsEmptyCutboard()) {
+        else if (!_cutboardController.IsEmptyCutboard() && item == null) {
             _action = Action.Take;
             return true;
         }
