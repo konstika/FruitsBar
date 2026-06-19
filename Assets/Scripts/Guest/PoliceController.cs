@@ -10,10 +10,9 @@ public class PoliceController : MonoBehaviour
     [SerializeField] private Sprite _faceSprite;
     private AchievementManager _achievementManager = AchievementManager.Instance;
 
-
-    private string[] _policeDialog = { "Good evening", "Вы ебать подозрительны", "Чем тут торгуете? А?" };
-    private string[] _policeDialogBadEnd = { "Everything is clear", "I have to arrest you. Come with me.", "" };
-    private string[] _policeDialogGoodEnd = { "I'll be back.", "Good evening", "" };
+    private string[] _policeDialog = { "Good evening, I'm from the police department.","What are you doing here?", "Making drinks, huh?" };
+    private string[] _policeDialogBadEnd = { "I see it now", "You are arrested. Come with me.", "" };
+    private string[] _policeDialogGoodEnd = { "Very well. I don't see any violations here so far.", "Have a nice evening.", "" };
     private Dictionary<AchievementIndex, string> _achievementsRight = new Dictionary<AchievementIndex, string>();
     private Dictionary<AchievementIndex, string> _achievementsFail = new Dictionary<AchievementIndex, string>();
 
